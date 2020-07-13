@@ -1,0 +1,17 @@
+{
+  "name": "nodetdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/** test/** --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GabrielGQA <gabrielgqa@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
