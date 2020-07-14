@@ -9,3 +9,12 @@ test('Deve listar os usuários', () => {
       expect(res.body).toHaveLength(1);
     });
 });
+
+test('Deve inserir novo usuário', () => {
+  return request(app).post('/users')
+    .send({ name: 'Gabriel', email: 'gabrielgqa@gmail.com' })
+    .then((res) => {
+      expect(res.status).toBe(201);
+      expect(res.body.name).toBe('Gabriel');
+    });
+});
